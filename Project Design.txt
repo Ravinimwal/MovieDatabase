@@ -1,0 +1,12 @@
+Design Thinking Process-
+  1) I have used Object Oriented Programming Approach instead of conventional functional programming to manage the code more efficiently and increase readablity of the code.
+  2) I have MYSQL instead of SQLite because MySQL is suitable for large-scale applications and websites that require a robust, high-performance, and scalable relational database. It can handle concurrent 
+     connections, complex queries, and extensive data sets. MySQL is often used for enterprise-level applications and projects while SQLite is best suited for lightweight applications, mobile apps, 
+     embedded systems, and small to medium-sized projects. It's not designed for high-concurrency scenarios or very large datasets and the Requirements given in the problem statement clearly mentioned that
+     number of requests may increase to 15million per day. Thus MySQL.
+  3) I have flask for implementing API's instead of some other framework-
+      I) Flask is highly flexible and allows developers to choose and integrate their preferred libraries and components for various tasks.
+      II) Flask's minimalistic design results in less boilerplate code compared to some larger frameworks. This can lead to faster development times and cleaner, more readable code.
+      III) Flask is widely adopted in both small and large projects, making it a solid choice for building web applications across a range of scales.
+  4) For Maintaining the privacy of Users, I have implemented hashing to store the hashed password of user in the Database instead directly saving the password. This increases confidence of the clients that 
+     user information will be safe and may prevent the informartion of users in case of potentital hacking attempts. 

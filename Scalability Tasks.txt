@@ -1,0 +1,19 @@
+Handling More Requests 
+  1) Use cloud platforms like AWS, Google Cloud, or Azure to enable auto-scaling based on traffic. This ensures that your application can dynamically allocate resources as needed.
+  2) Implement load balancing to distribute incoming requests across multiple server instances. This improves redundancy and handles increased traffic efficiently.
+  3) Database Clustering (making Replica-sets) is the process of combining more than one servers or instances connecting a single database.Sometimes one server may not be adequate to manage the amount of data or 
+     the number of requests, that is when a Data Cluster is needed. This can provide scaling seamlessly as required. This links directly to high availability. Without load balancing, a particular machine could 
+     get overworked and traffic would slow down, leading to decrement of the traffic to zero.
+  4) Partitioning - Technique used to divide stored database objects into separate servers. Due to this, there is an increase in performance, controllability of the data. We can manage huge chunks of data 
+     optimally. When we horizontally scale our machines/servers, we know that it gives us a challenging time dealing with relational databases as it’s quite tough to maintain the relations. But if we apply 
+     partitioning to the database that is already scaled out i.e. equipped with multiple servers, we can partition our database among those servers and handle the big data easily.
+  5) Sharding - The fundamental idea of Sharding is the idea that instead of having all the data sit on one DB instance, we split it up and introduce a Routing layer so that we can forward the request to the 
+     right instances that actually contain the data.
+  6) Continuously optimize your database queries, indexes, and table structures. Use tools like database query profilers to identify and fix slow queries.
+
+
+Architecture For More Load
+  1) Break down your application into microservices, each responsible for a specific function (e.g., user management, movie data, authentication). This allows independent scaling of services.
+  2) Implement caching for frequently requested API responses. Tools like Redis or CDN services can be used to cache responses and reduce the load on the API server.
+  3) Implement rate limiting of API's to prevent abuse and ensure fair usage of your API by users. Tools like Redis or rate limiting middleware in Flask can help with this.
+  4) Implement read replicas for database queries. This offloads read operations from the primary database and improves read performance.
