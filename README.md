@@ -12,7 +12,7 @@
 
 
 ### Configuration Setup
-1) Open Command Prompt and  enter the following command - git clone https://github.com/Mayankrai01/MovieDatabase.git
+1) Open Command Prompt and  enter the following command - https://github.com/Ravinimwal/MovieDatabase.git
 2) Open the MovieDatabase.sql in workbench and execute all the commands to create tables
 3) Now browse to the newly created folder using the command - cd MovieDatabse
 4) Run the following command to create a new conda virtual environment in current folder- conda create -p ./venv python=3.8 -y
